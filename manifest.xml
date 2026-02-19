@@ -6,7 +6,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Template Agent" />
   <Description DefaultValue="Categorized mail templates" />
-  <IconUrl DefaultValue="https://georgefar7.github.io/outlook-agent/icon-32.png" />
+  
   <Hosts>
     <Host Name="Mailbox" />
   </Hosts>
