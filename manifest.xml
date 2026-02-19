@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appshere/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
-  <Id>e2a1b3c4-5678-4912-8d3e-f1a2b3c4d5e6</Id>
-  <Version>1.0.0.5</Version>
+  <Id>f5d6c7b8-90a1-42b3-c4d5-e6f7a8b9c0d1</Id>
+  <Version>1.0.0.9</Version>
   <ProviderName>MyCustomAgent</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Template Agent" />
