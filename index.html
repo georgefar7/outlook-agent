@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 15px; }
+        .category { font-weight: bold; margin-top: 15px; color: #0078d4; border-bottom: 1px solid #ccc; }
+        button { 
+            display: block; width: 100%; text-align: left; 
+            padding: 8px; margin: 5px 0; cursor: pointer;
+            background: #f3f2f1; border: 1px solid #e1dfdd; 
+        }
+        button:hover { background: #edebe9; }
+    </style>
+</head>
+<body>
+    <h3>Select a Template</h3>
+    
+    <div class="category">Sales</div>
+    <button onclick="insert('Hi! Thanks for reaching out regarding our pricing...')">Pricing Inquiry</button>
+    <button onclick="insert('Great meeting you today! Attached is the deck...')">Follow Up</button>
+
+    <div class="category">Support</div>
+    <button onclick="insert('We have received your ticket and are looking into it.')">Ticket Received</button>
+    
+    <script>
+        Office.onReady();
+        function insert(text) {
+            Office.context.mailbox.item.body.setSelectedDataAsync(
+                text, 
+                { coercionType: Office.CoercionType.Text }
+            );
+        }
+    </script>
+</body>
+</html>
